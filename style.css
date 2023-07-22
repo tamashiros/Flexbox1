@@ -52,6 +52,34 @@
     border-radius: 16px;
 }
 
+.bloco-1{
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+.bloco-2{
+    background-color:red;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+.bloco-3{
+    background-color: lightpink;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+
 .container-row{
     display: flex;
     flex-direction: row;
