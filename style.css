@@ -1,31 +1,72 @@
-.titulo-pagina{
+
+hr {
+    margin: 15px;
+}
+
+.titulo-pagina {
     text-align: center;
     font-style: italic;
     font-size: 3em;
     font-weight: 900;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: darkblue;
     margin: 10px;
 }
 
-.nome-propriedade{
+.menu-navegacao {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.menu-navegacao ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.menu-navegacao li {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;   
+  
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-navegacao a:hover{
+    background-color: cyan
+}
+
+.nome-da-propriedade {
     font-size: 2em;
-    font-weight: 500;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500px;
+    font-family: 'Roboto', sans-serif;
     color: blue;
     padding: 20px;
 }
 
-.valor-propriedade{
-    font-size: 1.5em;
+.nome-da-propriedade-shorthand {
+    font-size: 2em;
+    font-weight: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: green;
+    padding: 20px;
+}
+
+.valor-da-propriedade {
+    font-size: 1,5em;
     font-weight: 400px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:black;
+    font-family: 'Roboto', sans-serif;
+    color: black;
     padding: 30px;
 }
 
-.bloco-1{
-    background-color: aqua;
+.bloco-1 {
+    background-color: lightblue;
     height: 150px;
     width: 150px;
     text-align: center;
@@ -33,16 +74,8 @@
     font-family: 'Courier New', Courier, monospace;
     border-radius: 16px;
 }
-.bloco-2{
-    background-color:red;
-    height: 150px;
-    width: 150px;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 16px;
-}
-.bloco-3{
+
+.bloco-2 {
     background-color: lightpink;
     height: 150px;
     width: 150px;
@@ -52,8 +85,8 @@
     border-radius: 16px;
 }
 
-.bloco-1{
-    background-color: aqua;
+.bloco-3 {
+    background-color: red;
     height: 150px;
     width: 150px;
     text-align: center;
@@ -61,8 +94,29 @@
     font-family: 'Courier New', Courier, monospace;
     border-radius: 16px;
 }
-.bloco-2{
-    background-color:red;
+
+.bloco-1-sem-altura {
+    background-color: lightblue;
+
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+
+.bloco-2-sem-altura {
+    background-color: lightpink;
+
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+
+.bloco-1-fontes-diferentes {
+    background-color: lightblue;
     height: 150px;
     width: 150px;
     text-align: center;
@@ -70,35 +124,30 @@
     font-family: 'Courier New', Courier, monospace;
     border-radius: 16px;
 }
-.bloco-3{
+
+.bloco-2-fontes-diferentes {
     background-color: lightpink;
     height: 150px;
     width: 150px;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 16px;
 }
 
-.bloco-1-semaltura{
-    background-color: aqua;
+.bloco-3-fontes-diferentes {
+    background-color: red;
+    height: 150px;
     width: 150px;
     text-align: center;
-    font-size: 40px;
+    font-size: 90px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 16px;
 }
-.bloco-2-semaltura{
-    background-color:red;
 
-    width: 150px;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 16px;
-}
-.bloco-3-semaltura{
-    background-color: lightpink;
+.bloco-3-sem-altura {
+    background-color: red;
+
     width: 150px;
     text-align: center;
     font-size: 40px;
@@ -106,116 +155,300 @@
     border-radius: 16px;
 }
 
-.container-row{
+.container {
     display: flex;
     flex-direction: row;
-    /* indiferente*/
+    /* indiferente */
     background-color: #f9eac3;
     padding: 16px;
     height: 500px;
 }
-.container-column{
+
+.container-row {
     display: flex;
-    flex-direction: column;
-    /* indiferente*/
-    background-color: yellow;
-    padding: 16px;
-    height: 500px;
-}
-.row-reverse{
-    display: flex;
-    flex-direction: row-reverse;
-    /* indiferente*/
-    background-color: green;
-    padding: 16px;
-    height: 500px;
-}
-.column-reverse{
-    display: flex;
-    flex-direction: column-reverse;
-    /* indiferente*/
-    background-color: blueviolet;
+    flex-direction: row;
+    /* indiferente */
+    background-color: #f9eac3;
     padding: 16px;
     height: 500px;
 }
 
-.container-justify-center{
+.container-column {
+    display: flex;
+    flex-direction: column;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-justify-center {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* indiferente*/
-    background-color: pink;
+    /* indiferente */
+    background-color: #f9eac3;
     padding: 16px;
     height: 500px;
 }
-.container-justify-flex-start{
+
+.container-justify-flex-start {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    /* indiferente*/
-    background-color: chocolate;
+    /* indiferente */
+    background-color: #f9eac3;
     padding: 16px;
     height: 500px;
 }
-.container-justify-flex-end{
+
+.container-justify-flex-end {
     display: flex;
     flex-direction: row;
-    justify-content:end;
-    /* indiferente*/
-    background-color: black;
+    justify-content: flex-end;
+    /* indiferente */
+    background-color: #f9eac3;
     padding: 16px;
     height: 500px;
 }
-.space-between{
+
+.container-justify-space-between {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    /* indiferente*/
-    background-color: grey;
+    justify-content: space-between;
+    /* indiferente */
+    background-color: #f9eac3;
     padding: 16px;
     height: 500px;
 }
-.space-around{
+
+.container-justify-space-evenly {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    /* indiferente*/
-    background-color: yellowgreen;
+    justify-content: space-evenly;
+    /* indiferente */
+    background-color: #f9eac3;
     padding: 16px;
     height: 500px;
 }
-.space-evenly{
+
+.container-justify-space-around {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;    
-    /* indiferente*/
-    background-color: blue;
+    justify-content: space-around;
+    /* indiferente */
+    background-color: #f9eac3;
     padding: 16px;
     height: 500px;
 }
-.alignitens-center{
+/* alinha os itens no centro no eixo principal*/
+.container-alignitems-center {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* indiferente*/
-    background-color: pink;
+    /* indiferente */
+    background-color: #f9eac3;
     padding: 16px;
     height: 500px;
-
 }
 
-.alignitens-stretch{
+.container-alignitems-flex-start {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:stretch;
-    /* indiferente*/
-    background-color: pink;
+    align-items: flex-start;
+    /* indiferente */
+    background-color: #f9eac3;
     padding: 16px;
     height: 500px;
 
 }
+
+.container-alignitems-flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+
+}
+/* estica os itens, utilizando elementos sem altura*/
+.container-alignitems-stretch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-alignitems-baseline
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-flexwrap-nowrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-flexwrap-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+.container-flexwrap-wrapreverse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-flexflow-row-nowrap
+{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    flex-flow: row nowrap;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-content-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-content-flexstart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-content-flexend
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+.container-align-content-spacebetween
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-content-spacearound
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+.container-align-content-spaceevenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    /* indiferente */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+
+
+
 
 
 
