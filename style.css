@@ -14,7 +14,7 @@ hr {
 }
 
 .menu-navegacao {
-  width: 80%;
+  width: 40%;
   margin: auto;
   text-align: center;
 }
@@ -38,7 +38,8 @@ a {
 }
 
 .menu-navegacao a:hover{
-    background-color: cyan
+    background-color: cyan;
+    padding:5px;
 }
 
 .nome-da-propriedade {
